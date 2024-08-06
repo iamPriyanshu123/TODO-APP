@@ -1,0 +1,84 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+body {
+  background-color: rgb(9, 53, 53);
+}
+
+.input-field {
+  background-color: rgb(143, 163, 163);
+  width: 600px;
+  height: 60px;
+  text-align: center;
+  padding: 5px;
+}
+
+.bttn {
+  width: 150px;
+  height: 40px;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(186,169,226,1) 0%, rgba(48,98,89,1) 0%, rgba(0,212,255,1) 100%);
+  border-radius: 25px;
+}
+
+.heading-container h1 {
+  font-size: 100px;
+  margin-bottom: 25px;
+  color: wheat;
+}
+.table-data{
+  font-size: 18px;
+}
+.task-complete{
+  text-decoration: line-through;
+  font-size: 25px;
+}
+
+@media only screen and (max-width:680px) {
+.heading-container h1 {
+    font-size: 40px;
+    text-align: center;
+  }
+  .todo-container{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .todo-container .input-field{
+    width: auto;
+  }
+
+}
+@media only screen and (max-width: 450px) {
+  .heading-container h1 {
+      font-size: 50px;
+      text-align: center;
+    }
+    .todo-container{
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .todo-container .input-field{
+     width: auto;
+    }
+    .remove{
+      width: auto;
+    }
+    .todo-input .limit-container{
+      position: relative;
+      left: 15px;
+      top: -3px;
+    }
+      
+    .bttn{
+      margin-top: -25px;
+    }
+    .error-msg{
+     position: relative;
+     left: 1px;
+    }
+  
+  }
